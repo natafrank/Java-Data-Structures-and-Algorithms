@@ -43,4 +43,9 @@ public class MergeSortTest extends TestCase {
         assertArrayEquals(new int[]{8}, numbers);
     }
 
+    public void testFrank() {
+        int[] numbers = new int[]{7, 5, 1, 2};
+        sort.mergeSort(numbers);
+        assertArrayEquals(new int[]{1, 2, 5, 7}, numbers);
+    }
 }
